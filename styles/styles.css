@@ -99,26 +99,15 @@ img {
 }
 
 
-.content a{
-  color: black;
+.content a {
+  color: blue;
 }
 
-.github-link:hover {
+.content a:hover {
   text-decoration: none;
-  color: blue;
-  transition-delay: .3s;
+  color: green;
 }
 
-.linkedin-link:hover {
-  text-decoration: none;
-  color: blue;
-  transition-delay: .2s;
-}
-.resume-link:hover {
-  text-decoration: none;
-  color: blue;
-  transition-delay: .2s;
-}
 
 .quote img {
   width: 100%;
@@ -138,6 +127,8 @@ img {
 
 .main {
   margin-top: -180px;
+  z-index: 2;
+  position: relative;
 }
 
 .row {
