@@ -78,6 +78,14 @@ h2 {
   font-family: Arial;
   padding: 6px 16px 5px;
   letter-spacing: 1px;
+  margin: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .slide-text {
+    top: auto;
+    bottom: 20px;
+  }
 }
 
 .slide img {
@@ -119,11 +127,33 @@ h2 {
 }
 .content a {
   color: blue;
+  display: inline-block;
+  position: relative;
+}
+.content a:after {
+  position: absolute;
+  bottom: 20%;
+  height: 30%;
+  left: -10%;
+  right: 0;
+  width: 120%;
+  background: lavender;
+  border-radius: 8px;
+  content: '';
+  z-index: -1;
+  border-bottom: solid 2px transparent;
+  transition: all 100ms ease-in-out;
 }
 
 .content a:hover {
   text-decoration: none;
   color: green;
+}
+.content a:hover:after{
+  height: 100%;
+  bottom: 0%;
+  background: lavenderblush;
+  border-bottom-color: rgb(224, 199, 207);
 }
 
 .content col {
@@ -274,14 +304,11 @@ padding-top: 50px;
   align-items: center;
   margin: 0 10px;
   text-decoration: none;
+  color: rgb(129, 129, 106);
 }
 
 .social-btn a:hover {
-  color: white;
-}
-
-.github-btn {
-  color: black;
+  color:  rgb(223, 26, 196);
 }
 
 .social-btn img {
