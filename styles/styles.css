@@ -38,8 +38,7 @@ h2 {
 }
 
 #contact {
-  background: rgb(246,255,248);
-  background: radial-gradient(circle, rgba(246,255,248,1) 0%, rgba(164,195,178,1) 100%);
+  background: ivory;
 }
 
 /*slider styles*/
@@ -204,18 +203,16 @@ input, textarea {
 }
 
 input[type=submit] {
-  background-color: rgba(246,255,248);;
-  color: black;
+  background-color: #d3cbfc;
   padding: 10px 16px;
   border: none;
   border-radius: 4px;
   margin: 8px 0;
-  width: 180px;
   font-size: 22px;
 }
 
 input[type=submit]:hover {
-  background-color:  rgba(164,195,178);
+  background-color: #b4cfc0;
   color: black;
   transition: .8s eas;
 }
@@ -226,7 +223,7 @@ label {
 
 /* Portfolio styles*/
 #portfolio {
-  background-color: lavender;
+  background: radial-gradient(circle, rgba(246,255,248,1) 0%, rgba(164,195,178,1) 100%);
 }
 
 .portfolio-header {
@@ -321,8 +318,8 @@ footer {
   align-items: center;
   padding: 40px;
   letter-spacing: .2em;
-  box-shadow: 0px 30px 110px #2d3a32, 0px 8px 20px #2d3a32;
-  background: radial-gradient(circle at bottom center, rgb(216, 226, 218) 0%, rgba(164,195,178,1) 100%);
+  box-shadow: 0px 30px 110px #3a382d, 0px 8px 20px #3a392d;
+  background: radial-gradient(circle at bottom center, ivory 0%, rgb(221, 221, 208) 100%);
 }
 
 
