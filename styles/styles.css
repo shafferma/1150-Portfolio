@@ -3,13 +3,7 @@ body {
   /* 1 */
   font-family: 'Indie Flower', cursive;
   font-size: 24px;
-  background: rgb(246,255,248);
-  background: radial-gradient(circle, rgba(246,255,248,1) 0%, rgba(164,195,178,1) 100%);
-  /* background: hsla(186, 28%, 93%, 1);
-  background: linear-gradient(135deg, hsla(186, 28%, 93%, 0.9) 10%, hsla(119, 66%, 82%, 1) 25%, hsla(127, 16%, 55%, 1) 50%, hsla(148, 20%, 24%, 1) 75%, hsla(195, 100%, 7%, 1) 100%);
-  background: -moz-linear-gradient(135deg, hsla(186, 28%, 93%, 0.9) 10%, hsla(119, 66%, 82%, 1) 25%, hsla(127, 16%, 55%, 1) 50%, hsla(148, 20%, 24%, 1) 75%, hsla(195, 100%, 7%, 1) 100%);
-  background: -webkit-linear-gradient(135deg, hsla(186, 28%, 93%, 0.9) 10%, hsla(119, 66%, 82%, 1) 25%, hsla(127, 16%, 55%, 1) 50%, hsla(148, 20%, 24%, 1) 75%, hsla(195, 100%, 7%, 1) 100%); */
-  /* filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#e8f1f2", endColorstr="#b3efb2", GradientType=1 ); */
+  background-color: ivory;
 }
 
 img {
@@ -18,21 +12,35 @@ img {
 }
 
 section {
-  padding-top: 80px;
+  padding: 80px  20px;
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   section {
     padding-top: 200px;
   }
 }
 
-/* @media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   section {
    
   }
 } */
 
+h2 {
+  font-size: 55px;
+  text-align: center;
+}
+
+
+#about {
+  margin-top: -150px;
+}
+
+#contact {
+  background: rgb(246,255,248);
+  background: radial-gradient(circle, rgba(246,255,248,1) 0%, rgba(164,195,178,1) 100%);
+}
 
 /*slider styles*/
 
@@ -58,17 +66,19 @@ section {
   flex-shrink: 0;
 }
 
-.slide-1-text {
-    position: absolute;
-    color: black;
-    z-index: 1;
-    bottom: 50px;
-    font-size: 22px;
-    font-weight: bold;
-    left: 20px;
-    background-color: rgb(164,195,178);
-    border-radius: 50px;
-    padding: 5px;
+.slide-text {
+  position: absolute;
+  color: white;
+  z-index: 1;
+  top: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  left: 20px;
+  background-color: rgba(0,0,0,0.65);
+  border-radius: 4px;
+  font-family: Arial;
+  padding: 6px 16px 5px;
+  letter-spacing: 1px;
 }
 
 .slide img {
@@ -102,22 +112,6 @@ section {
   }
 }
 
-.content {
-  height: 100%;
-  align-items: center;
-  padding: 20px;
-  width: 350px;
-  margin-right: 180px;
-  color: black;
-  border-radius: 20px;
-  border-style: double;
-  border-color: ivory;
-  background: rgb(246,255,248);
-  background: radial-gradient(circle, rgba(246,255,248,1) 0%, rgba(164,195,178,1) 100%);
-  /* font-family: 'indie'; */
-}
-
-
 .content a {
   color: blue;
 }
@@ -127,6 +121,10 @@ section {
   color: green;
 }
 
+.content col {
+  padding-right: 80px;
+    padding-top: 200px;
+}
 
 .quote img {
   width: 100%;
@@ -134,18 +132,18 @@ section {
 
 .quote {
  position: relative;
- width: 420px;
+ max-width: 420px;
  padding: 0;
  overflow: hidden;
  border-radius: 20px;
- border: ivory solid 6px;
+ border: ivory solid 12px;
  font-family: 'Dancing Script';
  font-size: 20px;
  z-index: 2;
+ width: 100%;
 }
 
 .main {
-  margin-top: -180px;
   z-index: 2;
   position: relative;
 }
@@ -186,7 +184,8 @@ section {
 #fs-frm {
   margin: 0 auto;
   padding: 20px;
-  width: 500px;
+  max-width: 500px;
+  width: 100%;
 }
 
 #fs-frm-inputs {
@@ -220,12 +219,15 @@ label {
 }
 
 /* Portfolio styles*/
+#portfolio {
+  background-color: lavender;
+}
 
 .portfolio-header {
   display: flex;
   position: relative;
   justify-content: center;
-  font-size: 65px;
+  font-size: 55px;
 }
 
 .portfolio {
@@ -235,9 +237,8 @@ label {
 }
 
 .portfolio-item {
-  width: 400px;
-  margin: 0 10px;
-  text-align: center;
+  max-width: 400px;
+  width: 100%;
   color: black;
   font-weight: 600;
   font-size: 25px;
@@ -251,17 +252,35 @@ label {
   border-radius: 20px;
   border: solid 8px ivory;
 }
-/* 
-.social img {
-  width: 25px;
-  padding: 8px;
-} */
 
 .social {
 position: relative;
-/* display: flex; */
 justify-content: center;
 padding-top: 50px;
+}
+
+.social-btn {
+  display: flex;
+  flex-direction: row;
+}
+
+.social-btn a {
+  font-size: 28px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.social-btn a:hover {
+  color: white;
+}
+
+.github-btn {
+  color: black;
 }
 
 .social-btn img {
@@ -293,24 +312,16 @@ padding-top: 50px;
 footer {
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 40px;
   letter-spacing: .2em;
+  box-shadow: 0px 30px 110px #2d3a32, 0px 8px 20px #2d3a32;
+  background: radial-gradient(circle at bottom center, rgb(216, 226, 218) 0%, rgba(164,195,178,1) 100%);
 }
 
-.social-btn {
-  display: flex;
-  flex-direction: row;
-  width: 100px;
-  height: 100px;
-}
 
 .copyright {
-  padding: 20px;
-  font-size: 22px;
-  color: black;
+  font-size: 16px;
 }
-/* .copy-link:hover {
-  text-decoration-color: black;
-  color: black;
-} */
