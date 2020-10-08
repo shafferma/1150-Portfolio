@@ -112,6 +112,12 @@ h2 {
   }
 }
 
+
+@media screen and (min-width: 1200px) {
+  .content {
+    padding-top: 120px !important;
+  }
+}
 .content a {
   color: blue;
 }
@@ -231,9 +237,7 @@ label {
 }
 
 .portfolio {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  max-width: 860px;
 }
 
 .portfolio-item {
